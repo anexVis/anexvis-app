@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>glyVis</title>
+    <!--The external libraries that vislib depends on-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+
+    <script src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+
+    <script src="lib/opencpu/opencpu-0.5.js"></script>
+    <script src="lib/d3-4.2.6/d3.min.js"></script>
+    <script src="lib/d3-scale-chromatic/d3-scale-chromatic.min.js"></script>
+    <script src="lib/d3-colorbar/d3-colorbar.min.js"></script>
+    <script src="node_modules/dom-to-image/dist/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+
+    <script src="lib/vislib/external/selectize/selectize.js"></script>
+    <link rel="stylesheet" href="lib/vislib/external/selectize/selectize.default.css">
+
+    <script src="lib/vislib/external/DataTables/datatables.js"></script>
+    <link rel="stylesheet" href="lib/vislib/external/DataTables/datatables.css">
+    <!--END External libraries-->
+
+    <!-- vislib -->
+
+    <script src="lib/vislib/dist/scatterplot/Scatterplot.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/scatterplot/Scatterplot.css">
+
+    <script src="lib/vislib/dist/genecard/GeneCard.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/genecard/GeneCard.css">
+
+    <script src="lib/vislib/dist/heatmap/Dendrogram.js"></script>
+    <script src="lib/vislib/dist/heatmap/Matrix.js"></script>
+    <script src="lib/vislib/dist/heatmap/GenericMatrix.js"></script>
+    <script src="lib/vislib/dist/heatmap/Heatmap.js"></script>
+    <script src="lib/vislib/dist/heatmap/GenericHeatmap.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/heatmap/Matrix.css">
+    <link rel="stylesheet" href="lib/vislib/dist/heatmap/Dendrogram.css">
+
+    <script src="lib/vislib/dist/parcoord/ParallelCoord.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/parcoord/ParallelCoord.css">
+
+    <script src="lib/vislib/dist/scatterplot/Scatterplot.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/scatterplot/Scatterplot.css">
+
+    <script src="lib/vislib/dist/genecard/bioserver.js"></script>
+    <script src="lib/vislib/dist/genecard/GeneCard.js"></script>
+    <script src="lib/vislib/dist/genecard/GeneTable.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/genecard/GeneCard.css">
+
+    <script src="lib/vislib/dist/searchbox/SearchBox.js"></script>
+
+    <script src="lib/vislib/dist/hbarchart/HBarChart.js"></script>
+    <link rel="stylesheet" href="lib/vislib/dist/hbarchart/HBarChart.css">
+
+    <script src="lib/DataTables/datatables.min.js"></script>
+    <script src="lib/vislib/dist/table/Table.js"></script>
+    <link rel="stylesheet" href="lib/DataTables/datatables.min.css">
+
+    <!--END vislib -->
+
+    <script src="js/SelectMenu.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--<style>-->
+        <!--div#heatmap_plot {-->
+            <!--float: left;-->
+            <!--width: 520px;-->
+            <!--height: auto;-->
+            <!--position: absolute;-->
+        <!--}-->
+        <!--div#info {-->
+            <!--position: absolute;-->
+            <!--margin-left: 520px;-->
+        <!--}-->
+    <!--</style>-->
+    <script> ocpuserver = location.hostname ; </script>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+<body>
+
+<div id="tabs">
+
+    <ul>
+        <li><a href="ajax/expr_profile.html">Expression Pattern</a></li>
+        <li><a href="ajax/correlation.html">Correlation</a></li>
+        <li><a href="ajax/dataset.html">Data set</a></li>
+    </ul>
+</div>
+</body>
+</html>

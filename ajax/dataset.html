@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div><label for="dset-options">Select a data set</label><br>
+</div>
+<div id="dset-select">
+    <select name="dset-options" id="dset-options">
+        <!--<option>Broad-processed, normalized to FPKM</option>-->
+        <!--<option>TOIL-processed with RSEM, normalized to FPKM</option>-->
+        <!--<option selected="selected">TOIL-processed with RSEM, normalized to TPM</option>-->
+    </select>
+</div>
+<div id="dset-info"></div>
+</body>
+<script>
+    datasets = [
+        {'id': 0, 'label': 'Broad-processed, normalized to FPKM', 'processing': 'broad', 'unit': 'fpkm'},
+        {'id': 1, 'label': 'TOIL-processed, normalized to FPKM', 'processing': 'toil-rsem', 'unit': 'fpkm'},
+        {'id': 2, 'label': 'TOIL-processed, normalized to TPM', 'processing': 'toil-rsem', 'unit': 'tpm'}
+    ];
+    var sel = $("#dset-options").selectize({
+        create: false,
+        maxItems: 1,
+        valueField: 'id',
+        labelField: 'label',
+        searchField: 'label',
+        openOnFocus: true,
+        closeAfterSelect: true,
+        options: datasets, // self.extractOptions(self.options.valueField, self.options.labelField, self.options.searchField),
+        // render: {
+        //     option: function (item, escape) {
+        //         return '<p class="geneSet">' + item[self.options.labelField] + '</p>'
+        //     }
+        // },
+        onChange: function (value) {
+            global.selectedDataset = datasets[value];
+        }
+    });
+    sel[0].selectize.setValue(2);
+</script>
+</html>

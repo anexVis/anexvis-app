@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/ExpressionProfileTab.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="column column-control">
+        <div id="expr-controlPanel">
+            <fieldset style="height:40%">
+                <legend>Genes</legend>
+
+                <button id="expr-copyGenes" class="ui-button ui-widget ui-corner-all">Copy from Correlation Tab</button><br><br>
+                <label for="expr-genesDropDown">Select a gene set</label><br>
+                <div id="expr-genesDropDown"></div><br>
+                <label for="expr-genesInput">Or type some gene names</label><br>
+                <div id="expr-genesInput" style="width:100%; position: relative; bottom: 0"></div>
+
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Sample group</legend>
+                <input type="radio" name="expr-grouping-option" id="expr-grouping-option-1" value="SMTS">
+                <label for="expr-grouping-option-1">Organ system</label><br>
+                <div id="expr-container-option-1"> </div>
+                <br>
+                <input type="radio" name="expr-grouping-option" id="expr-grouping-option-2" value="SMTSD" checked="checked">
+                <label for="expr-grouping-option-2">Tissue</label> <br>
+                <div id="expr-container-option-2"> </div>
+                <!--<div id="expr-groupsInput">-->
+                    <!--Dropdown box comes here. dynamicallly load options based on the grouping above.-->
+                <!--</div>-->
+            </fieldset>
+            <br/>
+            <div id="expr-status"></div>
+            <br/>
+            <button id="expr-plot" class="ui-button ui-widget ui-corner-all" style="float: right">Plot</button>
+        </div>
+    </div>
+    <div class="column column-main">
+        <div class="box-upper" id="expr-parplotPanel"></div>
+        <div class="box-lower" id="expr-tablePanel"></div>
+    </div>
+    <div class="column column-side">
+        <div id="expr-barchartControl" style="text-align: center">
+            <button id="expr-showPercentage" style="visibility: hidden;"></button>
+        </div><br>
+        <div id="expr-barchartContainer"></div>
+    </div>
+</div>
+
+<script>
+global.exprTab = new ExpressionProfileTab();
+</script>
+</body>
+</html>

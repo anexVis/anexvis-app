@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/CorrelationTab.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="column column-control">
+
+    <div id="corr-controlPanel">
+        <fieldset>
+            <legend>Genes</legend>
+            <button id="corr-copyGenes" class="ui-button ui-widget ui-corner-all">Copy from Expression Tab</button><br><br>
+            <label for="corr-genesDropDown">Select a gene set</label><br>
+            <div id="corr-genesDropDown"></div><br>
+            <label for="corr-genesInput">Or type some gene names</label><br>
+            <div id="corr-genesInput" style="width:100%; position: relative; bottom: 0"></div>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Sample group</legend>
+                <input type="radio" name="corr-grouping-option" id="corr-grouping-option-1" value="SMTS">
+                <label for="corr-grouping-option-1">Organ system</label><br>
+                <div id="corr-container-option-1"> </div>
+                <br>
+                <input type="radio" name="corr-grouping-option" id="corr-grouping-option-2" value="SMTSD" checked="checked">
+                <label for="corr-grouping-option-2">Tissue</label> <br>
+                <div id="corr-container-option-2"> </div>
+        </fieldset>
+        <br/>
+        <div id="corr-status"></div>
+        <br/>
+        <button id="corr-calculate" class="ui-button ui-widget ui-corner-all" style="float: right">Calculate</button>
+    </div>
+    </div>
+    <div class="column column-main" id="corr-mainPanel"></div>
+    <div class="column column-side" id="corr-suppPanel">
+        <div id="corr-scatterPlot"></div>
+        <div id="corr-infoTable"></div>
+    </div>
+</div>
+
+<div id="corr-tooltip" style="visibility: hidden"></div>
+<script>
+global.corrTab = new CorrelationTab();
+</script>
+</body>
+</html>
