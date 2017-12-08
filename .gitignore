@@ -3,3 +3,4 @@
 .idea*
 **/*.bkp
 node_modules/**
+**.csv
