@@ -75,7 +75,7 @@ function initPage() {
         'ONTOTERM': 'Ontology term',
         'SMNABTCHT': 'Type of nucleic acid isolation batch'
     };
-    ocpu.seturl("//" + ocpuserver + "/ocpu/library/rglyvis/R");
+    ocpu.seturl("//" + ocpuserver + "/ocpu/library/ranexvis/R");
     
     getGeneList();
     getSampleGroupingList();
