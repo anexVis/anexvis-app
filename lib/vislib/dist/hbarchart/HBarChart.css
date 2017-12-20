@@ -1,0 +1,70 @@
+.HBarChart.toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        /*color: black;*/
+        font: 12px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+.HBarChart .legend {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60%;
+    }
+.HBarChart.title {
+    text-align: center;
+}
+.HBarChart rect {
+        stroke-width: 2;
+    }
+
+.HBarChart .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+.HBarChart .axis .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+.HBarChart .axisHorizontal path{
+        fill: none;
+    }
+
+.HBarChart .axisHorizontal line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+.HBarChart .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+.HBarChart .bar  rect.background{
+        fill: #D9D9D9;
+    }
+
+.HBarChart .bar rect.foreground{
+    fill: #1b9dec;
+}
+
+.HBarChart.Button {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.HBarChart.Button img{
+    width: 25px;
+}

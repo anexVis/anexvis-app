@@ -1,0 +1,10 @@
+**/*.aux
+**/*.synctex.gz
+**/*.bbl
+**/*.blg
+**/*.log
+codes/python/*.pyc
+**/.*.swp
+/.project
+.idea*
+**/*.bkp

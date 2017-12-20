@@ -1,0 +1,13 @@
+.Dendrogram .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.Dendrogram .node {
+    font: 20px sans-serif;
+}
+.Dendrogram .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}

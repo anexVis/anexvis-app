@@ -1,0 +1,29 @@
+.Scatterplot .point {
+    opacity: 0.3;
+    fill: #000000;
+}
+.Scatterplot .point.active {
+    stroke: firebrick;
+    fill: #804901;
+    opacity: 1;
+    stroke-width: 2px;
+}
+
+.Scatterplot .axis path, .Scatterplot .axis line {
+    stroke: #000;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.Scatterplot .axis .label {
+    fill: #000;
+    font-size: 1.15em;
+}
+
+.Scatterplot .draggable {
+    cursor: move;
+}
+
+/*.Scatterplot .legend rect{*/
+    /*!*opacity: 0.7;*!*/
+/*}*/

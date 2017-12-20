@@ -1,0 +1,43 @@
+.ParallelCoord .background path {
+         fill: none;
+         stroke: #99A3A4;
+         /*shape-rendering: crispEdges;*/
+}
+
+.ParallelCoord .background path.inactive {
+    display: none;
+}
+ 
+.ParallelCoord .foreground path {
+         fill: none;
+         stroke: #1b9dec;
+         /*stroke-opacity: 0.7;*/
+}
+
+.ParallelCoord .foreground path.inactive {
+    display: none;
+    /*fill: none;*/
+    /*stroke: #ddd;*/
+    /*stroke-opacity: 0.7;*/
+}
+
+.ParallelCoord .brush .extent {
+         fill-opacity: .3;
+         stroke: #fff;
+         shape-rendering: crispEdges;
+}
+ 
+ 
+.ParallelCoord .axis line,
+     .axis path {
+         fill: none;
+         stroke: #000;
+         shape-rendering: crispEdges;
+}
+ 
+ 
+.ParallelCoord .dimension text {
+     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+     cursor: move;
+}
+

@@ -1,0 +1,29 @@
+.Matrix .background,.GenericMatrix .background {
+    fill: #FFFFFF;
+}
+
+.Matrix line,.GenericMatrix line {
+    stroke: #c6c6c6;
+}
+
+.GenericMatrix text.active,.Matrix  text.active{
+    fill: red;
+    font-weight: bold;
+}
+
+.Matrix .colname,.GenericMatrix .colname {
+    font-size: 12px;
+}
+
+
+.Matrix .rowname,.GenericMatrix .rowname {
+    font-size: 12px;
+}
+
+.Matrix .cell {
+    stroke-width: 0px;
+}
+.Matrix .cell.active {
+    stroke-width: 3px;
+    stroke: #e4e026;
+}

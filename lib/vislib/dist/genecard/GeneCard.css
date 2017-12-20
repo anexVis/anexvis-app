@@ -1,0 +1,29 @@
+.GeneCard tr {
+    border: none;
+}
+.GeneCard td[class=fieldname] {
+    font-weight: bold;
+}
+
+.GeneTable td[class=fieldname] {
+    font-weight: bold;
+}
+
+table.GeneTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.GeneTable td{
+    word-wrap:break-word;
+    vertical-align: text-top;
+}
+
+.GeneTable thead {
+    background-color: steelblue;
+    text-align: center;
+}
+
+.GeneTable thead td:first-child {
+    background-color: #fff;
+}
